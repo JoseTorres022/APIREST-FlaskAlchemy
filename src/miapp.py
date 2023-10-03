@@ -11,7 +11,7 @@ from flask_marshmallow import Marshmallow
 app=Flask(__name__)
 
 #Creamos la conexion a la base de datos
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:1Gb=!db%@localhost:33066/miflaskmysql'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:<contraseña>@localhost:<puerto>/<nombre_bd>'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db=SQLAlchemy(app)
 ma=Marshmallow(app)
