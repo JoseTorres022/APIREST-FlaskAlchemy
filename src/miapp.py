@@ -103,5 +103,6 @@ def borrar_tarea(id):
 def index():
     return jsonify({'message': 'Bienevendi@ a mi API REST MySQl x SQLAlquemy, para la clase de Arquitectura Orientado a Microservicios'})
 
+#Creasmo esl debug para que se actualize y haga cambios cada vez que modifiquemos el codigo
 if __name__=="__main__":
     app.run(debug=True)
